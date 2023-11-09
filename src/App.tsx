@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Tab, Tabs } from 'react-bootstrap';
 
 function App() {
   const researchContent = `
@@ -30,12 +31,88 @@ function App() {
     </div>
   `;
 
+  const interviewResponses = `
+    <div class="interview-responses">
+    <div class="user-responses">
+        <h4>Usuário 1:</h4>
+        <ol>
+            <li><strong>1. Como é minha relação com o celular?</strong><br>
+                "Eu uso meu celular o tempo todo! É meu principal meio de comunicação e acesso a informações. Não precisa ser o último modelo, mas precisa funcionar bem."
+            </li>
+            <li><strong>2. O público-alvo sabe ler e escrever em português?</strong><br>
+                "Sim, eu sei ler e escrever em português. A comunicação escrita é fundamental para mim."
+            </li>
+            <li><strong>3. Além das músicas religiosas, seriam interessantes outras opções de músicas no aplicativo?</strong><br>
+                "Além das músicas religiosas, eu adoraria ter outras opções de músicas no aplicativo. Uma variedade seria ótimo!"
+            </li>
+            <li><strong>4. Costumam utilizar aplicativos/ferramentas para facilitar a interação com o celular ou computador? Quais?</strong><br>
+                "Sim, uso alguns aplicativos para facilitar a interação com meu celular, especialmente aqueles que têm recursos de acessibilidade, como leitores de tela."
+            </li>
+            <li><strong>5. Como é a sua experiência em eventos sociais com música, como concertos e festivais? O que você sente?</strong><br>
+                "Minha experiência em eventos sociais com música? Costuma ser frustrante. Eu me sinto excluído da diversão."
+            </li>
+            <!-- Adicione o restante das perguntas e respostas do Usuário 1 aqui -->
+        </ol>
+    </div>
+
+    <div class="user-responses">
+        <h4>Usuário 2:</h4>
+        <ol>
+            <li><strong>1. Como é a relação do público com o celular? Utilizam constantemente? Seus celulares são em média de última geração ou eles não se apegam muito aos modelos?</strong><br>
+                "A minha relação com o celular é bastante próxima, pois ele desempenha um papel crucial na minha comunicação e interação com o mundo."
+            </li>
+            <li><strong>2. O público-alvo sabe ler e escrever em português?</strong><br>
+                "Sim, sei ler e escrever em português. A comunicação escrita é uma parte fundamental da minha interação com o mundo, já que a audição é limitada."
+            </li>
+            <li><strong>3. Além das músicas religiosas, seriam interessantes outras opções de músicas no aplicativo?</strong><br>
+                "Sim, seria muito interessante ter acesso a uma variedade de músicas além das religiosas. Isso proporcionaria uma experiência musical mais completa e inclusiva, permitindo que eu escolha músicas que se adequem ao meu gosto pessoal."
+            </li>
+            <!-- Adicione o restante das perguntas e respostas do Usuário 2 aqui -->
+        </ol>
+    </div>
+  </div>
+  `;
+
+  const participants = [
+    { name: 'Mateus Siqueira Carneiro', RA: '111824', Turma: 'Noturno' },
+    { name: 'Participant 2', RA: 'RA002', Turma: 'Noturno'  },
+    { name: 'Participant 3', RA: 'RA003', Turma: 'Noturno'  },
+    { name: 'Participant 2', RA: 'RA002', Turma: 'Noturno'  },
+    { name: 'Participant 3', RA: 'RA003', Turma: 'Noturno'  },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to Our Research Page</h1>
-        <div dangerouslySetInnerHTML={{ __html: researchContent }} />
+        <h1 className="main-title">IHC & UX</h1>
+        <p className="sub-title">Inclusão e Interação para Deficientes Auditivos</p>
+        <Tabs defaultActiveKey="content" id="research-tabs" className="custom-tabs">
+          <Tab eventKey="content" title="Conteúdo" className="custom-tab">
+            <Tab.Content>
+              <div className="content-tab">
+                <div className="research-content" dangerouslySetInnerHTML={{ __html: researchContent }} />
+              </div>
+            </Tab.Content>
+          </Tab>
+          <Tab eventKey="responses" title="Respostas" className="custom-tab">
+            <Tab.Content>
+              <div className="responses-tab">
+                <div className="interview-responses" dangerouslySetInnerHTML={{ __html: interviewResponses }} />
+              </div>
+            </Tab.Content>
+          </Tab>
+        </Tabs>
       </header>
+      <footer className="App-footer">
+        <h2>Lista de Participantes:</h2>
+        <ul>
+          {participants.map((participant, index) => (
+            <li key={index}>
+              {participant.name} - {participant.RA}
+            </li>
+          ))}
+        </ul>
+      </footer>
     </div>
   );
 }

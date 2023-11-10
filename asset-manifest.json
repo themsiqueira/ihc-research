@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/ihc-research/static/css/main.1245a671.css",
-    "main.js": "/ihc-research/static/js/main.752e61c2.js",
-    "static/js/787.58657547.chunk.js": "/ihc-research/static/js/787.58657547.chunk.js",
+    "main.css": "/ihc-research/static/css/main.6d8ef768.css",
+    "main.js": "/ihc-research/static/js/main.c60e7460.js",
     "index.html": "/ihc-research/index.html",
-    "main.1245a671.css.map": "/ihc-research/static/css/main.1245a671.css.map",
-    "main.752e61c2.js.map": "/ihc-research/static/js/main.752e61c2.js.map",
-    "787.58657547.chunk.js.map": "/ihc-research/static/js/787.58657547.chunk.js.map"
+    "main.6d8ef768.css.map": "/ihc-research/static/css/main.6d8ef768.css.map",
+    "main.c60e7460.js.map": "/ihc-research/static/js/main.c60e7460.js.map"
   },
   "entrypoints": [
-    "static/css/main.1245a671.css",
-    "static/js/main.752e61c2.js"
+    "static/css/main.6d8ef768.css",
+    "static/js/main.c60e7460.js"
   ]
 }

@@ -1,0 +1,17 @@
+.header {
+    background-color: #3496FB;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #F8FC07;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #F8FC07;
+}

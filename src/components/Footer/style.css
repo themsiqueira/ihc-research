@@ -1,0 +1,20 @@
+.App-footer {
+    background-color: #3496FB;
+    color: #F8FC07;
+    padding: 20px;
+    text-align: center;
+}
+
+.App-footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.App-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.App-footer li {
+    margin-bottom: 8px;
+}

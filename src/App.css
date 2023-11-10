@@ -1,120 +1,35 @@
 .App {
-  text-align: center;
-}
-
-.App-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.App-footer h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.App-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.App-footer li {
-  margin-bottom: 8px;
-}
-
-.App-header {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.main-title {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.sub-title {
-  font-size: 1.2em;
-  margin-bottom: 40px;
-}
-
-.research-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-  color: #333;
-}
-
-.research-content h2 {
-  margin-top: 30px;
-}
-
-.research-content h3 {
-  margin-top: 20px;
-}
-
-.research-content p {
-  margin-top: 10px;
-}
-
-.research-content ol {
-  padding-left: 20px;
-}
-
-.research-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-  color: #333;
-}
-
-.interview-responses {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-  color: #333;
-}
-
-.content-tab {
-  background-color: #f8f8f8;
-  padding: 20px;
-}
-
-.responses-tab {
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-.custom-tabs .nav-item {
-  width: 50%;
-  text-align: center;
-  list-style: none;
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.custom-tabs .nav-link {
-  background-color: #f8f8f8; 
-  color: #333; 
-  border-radius: 5px;
-  margin: 0 5px;
-  padding: 10px 20px;
-}
-
-.custom-tabs .nav-link.active {
-  background-color: #ffffff;
-  color: #000;
+    text-align: center;
 }
 
 .custom-tab-pane {
-  padding: 20px;
+    padding: 20px;
 }
 
-.custom-tab {
-  border: none;
+.App-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.App-footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.App-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.App-footer li {
+    margin-bottom: 8px;
+}
+
+.App-header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }

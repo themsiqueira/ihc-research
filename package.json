@@ -1,7 +1,7 @@
 {
   "name": "ihc-research",
   "version": "0.1.0",
-  "homepage": "https://themsiqueira.github.io/",
+  "homepage": "https://themsiqueira.github.io/ihc-research",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",

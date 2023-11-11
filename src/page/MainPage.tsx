@@ -7,6 +7,7 @@ import { ProjDescription } from "../components/Tabs/ProjDescription";
 import { Answers } from "../components/Tabs/Answers";
 import { Questions } from "../components/Tabs/Questions";
 import { Footer } from "../components/Footer/Footer";
+import Sketchs from '../components/Tabs/Sketchs';
 
 interface SidebarProps {
 	selectedTab: number;
@@ -124,9 +125,7 @@ const MainPage: React.FC = () => {
 						<Answers />
 					</TabPanel>
 					<TabPanel value={selectedTab} index={3}>
-						<p style={{ color: "black" }}>
-							This is a template for the sketch component.
-						</p>
+						<Sketchs />
 					</TabPanel>
 				</div>
 			</header>

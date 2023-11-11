@@ -1,7 +1,7 @@
 
 const Sketchs = () => {
  return (
-  <div>
+  <div  style={{ 	height: "100vh" }}>
     <iframe
       src={`${process.env.PUBLIC_URL}/low-fidelity.pdf`}
       width="100%"

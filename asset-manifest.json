@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ihc-research/static/css/main.6d8ef768.css",
-    "main.js": "/ihc-research/static/js/main.69ada737.js",
+    "main.js": "/ihc-research/static/js/main.0f0ac38d.js",
     "index.html": "/ihc-research/index.html",
     "main.6d8ef768.css.map": "/ihc-research/static/css/main.6d8ef768.css.map",
-    "main.69ada737.js.map": "/ihc-research/static/js/main.69ada737.js.map"
+    "main.0f0ac38d.js.map": "/ihc-research/static/js/main.0f0ac38d.js.map"
   },
   "entrypoints": [
     "static/css/main.6d8ef768.css",
-    "static/js/main.69ada737.js"
+    "static/js/main.0f0ac38d.js"
   ]
 }

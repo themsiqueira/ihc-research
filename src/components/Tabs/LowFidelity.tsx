@@ -1,5 +1,5 @@
 
-const Sketchs = () => {
+const LowFidelity = () => {
  return (
   <div  style={{ 	height: "100vh" }}>
     <iframe
@@ -13,4 +13,4 @@ const Sketchs = () => {
   </div>
  );
 };
-export default Sketchs;
+export default LowFidelity;

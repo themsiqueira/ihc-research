@@ -7,8 +7,8 @@ import { ProjDescription } from "../components/Tabs/ProjDescription";
 import { Answers } from "../components/Tabs/Answers";
 import { Questions } from "../components/Tabs/Questions";
 import { Footer } from "../components/Footer/Footer";
-import Sketchs from "../components/Tabs/Sketchs";
-import { Proptype } from "../components/Prototype";
+import HighFidelity from '../components/Tabs/HighFidelity';
+import LowFidelity from '../components/Tabs/LowFidelity';
 
 interface SidebarProps {
 	selectedTab: number;
@@ -67,8 +67,8 @@ const SubTopBar: React.FC<SidebarProps> = ({ selectedTab, onSelectTab }) => {
 				<Tab sx={{ color: "white" }} label="Descrição do Projeto" />
 				<Tab sx={{ color: "white" }} label="Perguntas" />
 				<Tab sx={{ color: "white" }} label="Respostas" />
-				<Tab sx={{ color: "white" }} label="Low Fidelity Prototype" />
-				<Tab sx={{ color: "white" }} label="High Fidelity Prototype" />
+				<Tab sx={{ color: "white" }} label="Low fidelity prototipo" />
+				<Tab sx={{ color: "white" }} label="High fidelity prototipo" />
 			</Tabs>
 		</ThemeProvider>
 	);
@@ -127,10 +127,10 @@ const MainPage: React.FC = () => {
 						<Answers />
 					</TabPanel>
 					<TabPanel value={selectedTab} index={3}>
-						<Sketchs />
+						<LowFidelity />
 					</TabPanel>
 					<TabPanel value={selectedTab} index={4}>
-						<Proptype />
+						<HighFidelity />
 					</TabPanel>
 				</div>
 			</header>
